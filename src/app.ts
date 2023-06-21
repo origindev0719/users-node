@@ -3,11 +3,12 @@ import compression from "compression";
 import express, { Request, Response, NextFunction, Application } from "express";
 import router from "./routes";
 import cors from "cors";
-// const connection = require("./db");
+import appConfig from "./config";
+import dbConfig from "./config";
 
 const app: Application = express();
 
-// connection();
+dbConfig.connection();
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Users API");

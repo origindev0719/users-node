@@ -7,7 +7,7 @@ if (result.error) {
   dotenv.config({ path: ".env.default" });
 }
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 const serve = () =>
   app.listen(PORT, () => {
