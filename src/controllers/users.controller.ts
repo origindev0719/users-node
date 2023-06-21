@@ -1,5 +1,8 @@
+const User = require("../models");
+
 export const getUsers = (req, res) => {
   console.log("getUsers");
+  res.json(User);
 };
 
 export const createUser = () => {
@@ -14,6 +17,6 @@ export const updateUser = () => {
   console.log("update user");
 };
 
-export const getUserByUsername = () => {
+export const getUserByUserName = () => {
   console.log("getUserByUsername");
 };
