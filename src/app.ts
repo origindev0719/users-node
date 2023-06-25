@@ -3,7 +3,6 @@ import compression from "compression";
 import express, { Request, Response, NextFunction, Application } from "express";
 import router from "./routes";
 import cors from "cors";
-// import appConfig from "./config";
 import dbConfig from "./config";
 
 const app: Application = express();

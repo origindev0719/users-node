@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-  name: { type: String, trim: true, required: true },
+  username: { type: String, trim: true, required: true },
   email: {
     type: String,
     trim: true,
@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
       validator: function (value) {
         return /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(value);
       },
-      message: "Invalid email",
+      message: "Invalid emailsss",
     },
     required: true,
   },
